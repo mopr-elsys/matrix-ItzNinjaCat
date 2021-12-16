@@ -22,6 +22,9 @@ void print(int A[][N], int n, int m) {
 }
 
 bool mEqual(int A[][N], int n1, int m1, int B[][N], int n2, int m2) {
+	if(n1 != n2 or m1 != m2){
+		return false;
+	}
 	for(int i = 0; i < n1; i++){
 		for(int j = 0; j < m1; j++){
 			if(A[i][j] != B[i][j]){
