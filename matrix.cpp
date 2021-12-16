@@ -42,7 +42,13 @@ void sum(int A[][N], int B[][N], int C[][N], int n, int m) {
 		}
 	}
 }
-void transpose(int A[][N], int B[][N], int n, int m) {}
+void transpose(int A[][N], int B[][N], int n, int m) {
+	for (int i = 0; i < n; i++){
+		for (int j = 0; j < m; j++) {
+			B[j][i] = A[i][j];
+      	}
+	}
+}
 void sMult(int A[][N], int R[][N], int n, int m, int s) {
 	for(int i = 0; i < n; i++){
 		for(int j = 0; j < m; j++){
